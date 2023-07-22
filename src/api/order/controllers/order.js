@@ -33,28 +33,6 @@ let parameter = {
 let response = await snap.createTransaction(parameter)
 
 
-// const midtransClient = require('midtrans-client');
-// // Create Core API instance
-// let core = new midtransClient.CoreApi({
-//         isProduction : false,
-//         serverKey : 'SB-Mid-server-bA1VrqoAz5S9IdDj2_ky2T2N',
-//         clientKey : 'SB-Mid-client-OEDfZ8tTIqOqJ0Z-'
-//     });
-
-// let parameter = {
-//     "payment_type": "Gopay",
-//     "transaction_details": {
-//         "gross_amount": result.data.attributes.totalPrice,
-//         "order_id": result.data.id,
-//     },
-//     "credit_card":{
-//         "token_id": 'CREDIT_CARD_TOKEN', // change with your card token
-//         "authentication": true
-//     }
-// };
-
-// // charge transaction
-// let response = await core.charge(parameter)
 
         return response ;
     }
